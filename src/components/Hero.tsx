@@ -4,7 +4,7 @@ import heroImage from "@/assets/peaceful-hero-bg.jpg";
 const Hero = () => {
   return (
     <section 
-      className="min-h-screen flex items-center justify-center relative overflow-hidden"
+      className="min-h-[85vh] flex items-center justify-center relative overflow-hidden"
       style={{
         backgroundImage: `url(${heroImage})`,
         backgroundSize: 'cover',
@@ -27,7 +27,7 @@ const Hero = () => {
             Find clarity, self-understanding, and peaceful insights for your journey.
           </p>
           
-          <div className="flex justify-center mb-12">
+          <div className="flex justify-center mb-8">
             <a 
               href="https://play.google.com/store/apps" 
               target="_blank" 
@@ -42,27 +42,10 @@ const Hero = () => {
             </a>
           </div>
 
-          {/* Статистика */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-comfort-sage mb-2">4.9</div>
-              <div className="text-sm text-foreground/80">App Store Rating</div>
-              <div className="flex justify-center mt-1">
-                {"⭐".repeat(5)}
-              </div>
-            </div>
-            
-            <div className="text-center">
-              <div className="text-4xl font-bold text-comfort-sage mb-2">100K+</div>
-              <div className="text-sm text-foreground/80">Downloads</div>
-              <div className="h-6"></div>
-            </div>
-            
-            <div className="text-center">
-              <div className="text-4xl font-bold text-comfort-sage mb-2">5K+</div>
-              <div className="text-sm text-foreground/80">Reviews</div>
-              <div className="h-6"></div>
-            </div>
+          <div className="text-center">
+            <p className="text-foreground/60 text-sm">
+              Developed in collaboration with a professional tarot reader
+            </p>
           </div>
         </div>
       </div>

@@ -17,7 +17,7 @@ const Footer = () => {
             <a href="#/account-deletion" className="hover:text-comfort-sage transition-colors">
               Account Deletion
             </a>
-            <a href="#" className="hover:text-comfort-sage transition-colors">
+            <a href="mailto:yauheni+support@kalenski.dev" className="hover:text-comfort-sage transition-colors">
               Support
             </a>
           </div>
@@ -25,7 +25,7 @@ const Footer = () => {
         
         <div className="border-t border-comfort-sage/20 mt-8 pt-8 text-center">
           <p className="text-foreground/60 text-sm">
-            © 2024 Aura Tarot. All rights reserved. Discover your inner wisdom with gentle tarot guidance.
+            © 2025 Aura Tarot. All rights reserved. Discover your inner wisdom with gentle tarot guidance.
           </p>
         </div>
       </div>
