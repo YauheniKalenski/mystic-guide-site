@@ -1,27 +1,24 @@
 import { Card, CardContent } from "@/components/ui/card";
-import appPreviewImage from "@/assets/comfortable-app-preview.jpg";
-import cardsFeatureImage from "@/assets/cards-feature.jpg";
-import crystalBallImage from "@/assets/crystal-ball.jpg";
+import sungirlImage from "@/assets/sungirl.webp";
+import readgirlImage from "@/assets/readgirl.webp";
+import spreadResultGirlImage from "@/assets/spread_result_girl.webp";
 
 const Features = () => {
   const features = [
     {
       title: "Daily Reflections",
       description: "Start each day with gentle guidance and thoughtful card interpretations for personal growth",
-      image: cardsFeatureImage,
-      icon: "🌱"
+      image: sungirlImage
     },
     {
-      title: "Intuitive Design",
-      description: "A calming, user-friendly interface that makes tarot accessible and comfortable for everyone",
-      image: appPreviewImage,
-      icon: "✨"
+      title: "Learn Tarot",
+      description: "Master the art of tarot reading with comprehensive lessons, card meanings, and practical exercises",
+      image: readgirlImage
     },
     {
       title: "Mindful Insights",
       description: "Thoughtful interpretations focused on self-understanding, growth, and inner peace",
-      image: crystalBallImage,
-      icon: "🧘"
+      image: spreadResultGirlImage
     }
   ];
 
@@ -49,9 +46,6 @@ const Features = () => {
                   style={{ backgroundImage: `url(${feature.image})` }}
                 >
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
-                  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-4xl">
-                    {feature.icon}
-                  </div>
                 </div>
                 
                 <h3 className="text-2xl font-bold mb-4 text-foreground group-hover:text-comfort-sage transition-colors">

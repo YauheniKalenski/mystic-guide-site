@@ -1,10 +1,37 @@
 import { Button } from "@/components/ui/button";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const scrollToSection = (sectionId: string) => {
+    // Если мы на главной странице, просто прокручиваем
+    if (location.pathname === '/') {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // Если мы на другой странице, переходим на главную с якорем
+      navigate(`/#${sectionId}`);
+    }
+  };
+
+  const goToHome = () => {
+    if (location.pathname === '/') {
+      // Если уже на главной, прокручиваем к верху
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      // Если на другой странице, переходим на главную
+      navigate('/');
+    }
+  };
+
   return (
     <header className="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-comfort-sage/20">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-2 cursor-pointer" onClick={goToHome}>
           <div className="w-8 h-8 bg-gradient-comfort rounded-full"></div>
           <h1 className="text-2xl font-bold bg-gradient-comfort bg-clip-text text-transparent">
             Aura Tarot
@@ -12,25 +39,22 @@ const Header = () => {
         </div>
         
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#features" className="text-foreground hover:text-comfort-sage transition-colors">
+          <button 
+            onClick={() => scrollToSection('features')}
+            className="text-foreground hover:text-comfort-sage transition-colors cursor-pointer"
+          >
             Features
-          </a>
-          <a href="#how-it-works" className="text-foreground hover:text-comfort-sage transition-colors">
+          </button>
+          <button 
+            onClick={() => scrollToSection('how-it-works')}
+            className="text-foreground hover:text-comfort-sage transition-colors cursor-pointer"
+          >
             How it Works
-          </a>
-          <a href="#download" className="text-foreground hover:text-comfort-sage transition-colors">
-            Download
+          </button>
+          <a href="/privacy" className="text-foreground hover:text-comfort-sage transition-colors">
+            Privacy
           </a>
         </nav>
-
-        <Button 
-          asChild
-          className="bg-gradient-comfort hover:opacity-90 text-white font-semibold"
-        >
-          <a href="#download">
-            Download App
-          </a>
-        </Button>
       </div>
     </header>
   );

@@ -27,33 +27,42 @@ const Hero = () => {
             Find clarity, self-understanding, and peaceful insights for your journey.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              size="lg" 
-              className="bg-gradient-comfort hover:opacity-90 text-white font-semibold px-8 py-4 text-lg"
-              asChild
+          <div className="flex justify-center mb-12">
+            <a 
+              href="https://play.google.com/store/apps" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block"
             >
-              <a href="#download">
-                Download on Google Play
-              </a>
-            </Button>
-            
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-comfort-sage text-comfort-sage hover:bg-comfort-sage hover:text-white px-8 py-4 text-lg"
-              asChild
-            >
-              <a href="#features">
-                Learn More
-              </a>
-            </Button>
+              <img 
+                alt="Get it on Google Play" 
+                src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                className="h-16"
+              />
+            </a>
           </div>
-        </div>
-        
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-          <div className="w-6 h-10 border-2 border-comfort-sage rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-comfort-sage rounded-full mt-2"></div>
+
+          {/* Статистика */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
+            <div className="text-center">
+              <div className="text-4xl font-bold text-comfort-sage mb-2">4.9</div>
+              <div className="text-sm text-foreground/80">App Store Rating</div>
+              <div className="flex justify-center mt-1">
+                {"⭐".repeat(5)}
+              </div>
+            </div>
+            
+            <div className="text-center">
+              <div className="text-4xl font-bold text-comfort-sage mb-2">100K+</div>
+              <div className="text-sm text-foreground/80">Downloads</div>
+              <div className="h-6"></div>
+            </div>
+            
+            <div className="text-center">
+              <div className="text-4xl font-bold text-comfort-sage mb-2">5K+</div>
+              <div className="text-sm text-foreground/80">Reviews</div>
+              <div className="h-6"></div>
+            </div>
           </div>
         </div>
       </div>
