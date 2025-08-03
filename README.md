@@ -1,73 +1,91 @@
-# Welcome to your Lovable project
+# Aura Tarot - Discover Your Inner Wisdom
 
-## Project info
+A beautiful landing page for the Aura Tarot mobile application, built with React, TypeScript, and Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/2ae6a30e-1946-4812-8ba5-e2fad2999ae8
+## Features
 
-## How can I edit this code?
+- **Modern Design**: Clean, spiritual-themed interface with gradient backgrounds
+- **Responsive Layout**: Optimized for all devices and screen sizes
+- **Smooth Navigation**: Smart anchor links and routing
+- **Privacy Pages**: Dedicated pages for Privacy Policy and Account Deletion
+- **Google Play Integration**: Standard download button for Android users
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- **React 18** with TypeScript
+- **Vite** for fast development and building
+- **Tailwind CSS** for styling
+- **Shadcn/ui** components
+- **React Router** for navigation
+- **Radix UI** for accessible components
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2ae6a30e-1946-4812-8ba5-e2fad2999ae8) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js 18+ 
+- npm or yarn
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Clone the repository:
+```bash
+git clone https://github.com/eleoleeye/mystic-guide-site.git
+cd mystic-guide-site
+```
 
-Follow these steps:
+2. Install dependencies:
+```bash
+npm install
+```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Open your browser and navigate to `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Available Scripts
 
-**Use GitHub Codespaces**
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```
+src/
+├── components/     # Reusable UI components
+├── pages/         # Page components
+├── assets/        # Images and static files
+├── lib/           # Utility functions
+└── hooks/         # Custom React hooks
+```
 
-This project is built with:
+## Pages
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Home** (`/`) - Main landing page with hero, features, and download sections
+- **Privacy** (`/privacy`) - Privacy policy and data handling information
+- **Account Deletion** (`/account-deletion`) - Account deletion request form
 
-## How can I deploy this project?
+## Deployment
 
-Simply open [Lovable](https://lovable.dev/projects/2ae6a30e-1946-4812-8ba5-e2fad2999ae8) and click on Share -> Publish.
+The site can be deployed to any static hosting service like:
 
-## Can I connect a custom domain to my Lovable project?
+- Vercel
+- Netlify
+- GitHub Pages
+- AWS S3
 
-Yes, you can!
+## Contributing
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## License
+
+This project is licensed under the MIT License.
