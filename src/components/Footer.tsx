@@ -11,10 +11,10 @@ const Footer = () => {
           </div>
           
           <div className="flex items-center space-x-6 text-sm text-foreground/60">
-            <a href="/privacy" className="hover:text-comfort-sage transition-colors">
+            <a href="#/privacy" className="hover:text-comfort-sage transition-colors">
               Privacy Policy
             </a>
-            <a href="/account-deletion" className="hover:text-comfort-sage transition-colors">
+            <a href="#/account-deletion" className="hover:text-comfort-sage transition-colors">
               Account Deletion
             </a>
             <a href="#" className="hover:text-comfort-sage transition-colors">

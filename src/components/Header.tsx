@@ -51,7 +51,7 @@ const Header = () => {
           >
             How it Works
           </button>
-          <a href="/privacy" className="text-foreground hover:text-comfort-sage transition-colors">
+          <a href="#/privacy" className="text-foreground hover:text-comfort-sage transition-colors">
             Privacy
           </a>
         </nav>
