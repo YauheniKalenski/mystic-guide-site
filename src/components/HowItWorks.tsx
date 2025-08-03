@@ -2,23 +2,23 @@ const HowItWorks = () => {
   const steps = [
     {
       number: "01",
-      title: "Скачайте приложение",
-      description: "Установите Mystic Tarot из Google Play Store бесплатно"
+      title: "Download the App",
+      description: "Get Aura Tarot from the Google Play Store for free and begin your journey"
     },
     {
       number: "02", 
-      title: "Задайте вопрос",
-      description: "Сосредоточьтесь на том, что вас беспокоит, и задайте вопрос картам"
+      title: "Set Your Intention",
+      description: "Take a moment to center yourself and reflect on what guidance you're seeking"
     },
     {
       number: "03",
-      title: "Выберите карты",
-      description: "Интуитивно выберите карты из колоды для вашего расклада"
+      title: "Choose Your Cards",
+      description: "Trust your intuition as you select cards that resonate with your inner wisdom"
     },
     {
       number: "04",
-      title: "Получите ответ",
-      description: "Получите детальную интерпретацию и советы для вашей ситуации"
+      title: "Reflect & Grow",
+      description: "Receive thoughtful insights and take time to contemplate their meaning for your path"
     }
   ];
 
@@ -26,11 +26,11 @@ const HowItWorks = () => {
     <section id="how-it-works" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-mystical bg-clip-text text-transparent">
-            Как это работает
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-comfort bg-clip-text text-transparent">
+            How It Works
           </h2>
           <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
-            Четыре простых шага к раскрытию тайн вашей судьбы
+            Four simple steps to connect with your inner wisdom and find peaceful guidance
           </p>
         </div>
 
@@ -39,10 +39,10 @@ const HowItWorks = () => {
             {steps.map((step, index) => (
               <div 
                 key={index}
-                className="flex items-start space-x-6 p-6 rounded-xl bg-card/30 border border-mystical-purple/20 hover:border-mystical-purple/40 transition-all duration-300"
+                className="flex items-start space-x-6 p-6 rounded-xl bg-card/30 border border-comfort-sage/20 hover:border-comfort-sage/40 transition-all duration-300"
               >
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-gradient-mystical rounded-full flex items-center justify-center text-white font-bold text-xl animate-glow">
+                  <div className="w-16 h-16 bg-gradient-comfort rounded-full flex items-center justify-center text-white font-bold text-xl">
                     {step.number}
                   </div>
                 </div>
