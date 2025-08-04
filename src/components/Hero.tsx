@@ -29,7 +29,7 @@ const Hero = () => {
           
           <div className="flex justify-center mb-8">
             <a 
-              href="https://play.google.com/store/apps" 
+              href="https://play.google.com/store/search?q=aura%20tarot&c=apps"
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-block"
