@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useLocation, useNavigate } from "react-router-dom";
+import sungirl from "@/assets/logo.png";
 
 const Header = () => {
   const location = useLocation();
@@ -32,7 +33,11 @@ const Header = () => {
     <header className="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-comfort-sage/20">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-2 cursor-pointer" onClick={goToHome}>
-          <div className="w-8 h-8 bg-gradient-comfort rounded-full"></div>
+          <img 
+            src={sungirl} 
+            alt="Aura Tarot Logo" 
+            className="w-8 h-8 rounded-full object-cover"
+          />
           <h1 className="text-2xl font-bold bg-gradient-comfort bg-clip-text text-transparent">
             Aura Tarot
           </h1>
