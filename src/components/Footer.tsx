@@ -1,10 +1,16 @@
+import logo from "@/assets/logo.png";
+
 const Footer = () => {
   return (
     <footer className="py-12 bg-background border-t border-comfort-sage/20">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="flex items-center space-x-2 mb-4 md:mb-0">
-            <div className="w-8 h-8 bg-gradient-comfort rounded-full"></div>
+            <img 
+              src={logo} 
+              alt="Aura Tarot Logo" 
+              className="w-8 h-8 rounded-full object-cover"
+            />
             <h3 className="text-xl font-bold bg-gradient-comfort bg-clip-text text-transparent">
               Aura Tarot
             </h3>
