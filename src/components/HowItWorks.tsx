@@ -3,7 +3,7 @@ const HowItWorks = () => {
     {
       number: "01",
       title: "Download the App",
-      description: "Get Aura Tarot from the Google Play Store for free and begin your journey"
+      description: "Get Aura Tarot for free and begin your journey of self-discovery"
     },
     {
       number: "02", 

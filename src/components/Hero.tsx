@@ -27,6 +27,7 @@ const Hero = () => {
             Find clarity, self-understanding, and peaceful insights for your journey.
           </p>
           
+          {/* Temporarily commented out until app is available on Google Play Store
           <div className="flex justify-center mb-8">
             <a 
               href="https://play.google.com/store/search?q=aura%20tarot&c=apps"
@@ -41,6 +42,7 @@ const Hero = () => {
               />
             </a>
           </div>
+          */}
 
           <div className="text-center">
             <p className="text-foreground/60 text-sm">
